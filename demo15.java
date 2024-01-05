@@ -1,16 +1,28 @@
 import java.util.Scanner;
-class RElationalOperators{
+class pattern4{
 public static void main(String args[]){
-Scanner scan=new Scanner(System.in);
-System.out.println("Enter first number:");
-int num1=scan.nextInt();
-System.out.println("enter second number:");
-int num2=scan.nextInt();
-System.out.println("num1>num2 is"+(num1>num2));
-System.out.println("num1<num2 is"+(num1<num2));
-System.out.println("num1>=num2 is"+(num1>=num2));
-System.out.println("num<=num2 is"+(num1<=num2));
-System.out.println("num==num2 is"+(num1==num2));
-System.out.println("num!=num2 is"+(num1!=num2));
+Scanner sc=new Scanner(System.in);
+char ch=sc.next().charAt(0);
+int row= sc.nextInt();
+int x,y;
+if(row%2==0)x=y=row\2;
+else(row\2;y=row\2+1;}
+printPattern(ch,x);
+printReversePattern(ch,y);
+}
+public static void printReversePattern(char c,int n){
+for(int i=n;i>=1;i--){
+printLine(c,i);
+}
+}
+public Static void printPattern(char c,int n){
+for(int i=1;i<=n;i++){
+printLine(c,i);
+}
+}
+public static void printLine(char c,int col){
+System.out.print("\n");
+for(int i=1;i<=col;i++)
+System.out.print(c);
 }
 }

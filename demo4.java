@@ -1,13 +1,15 @@
 import java.util.Scanner;
-class Difference{
-public static void main(String args[]){
-Scanner sc=new Scanner(System.in);
-int a=sc.nextInt();
-int b=sc.nextInt();
-if(a<b);
-System.out.println(b-a);
-else
+class InputSwap{
+public static void main(String args[])
 {
-System.out.println(a-b);
+Scanner scob=new Scanner(System.in);
+int num1,num2;
+num1=scob.nextInt();
+num2=scob.nextInt();
+int temp;
+temp=num1;
+num1=num2;
+num2=temp;
+System.out.println(num1+"\n"+num2);
 }
 }

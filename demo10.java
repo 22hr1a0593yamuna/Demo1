@@ -1,17 +1,22 @@
- class UnaryOperatorsExample
+import java.util.*;
+class findmin{
+public static void main(String args[])
 {
-public static void main(String args[]){
-int number=+76;
-System.out.println(number);
-number=-number;
-System.out.println(number);
-int a=20;
-a++;
-System.out.println(a);
-a--;
-System.out.println(a);
-boolean flag=false;
-System.out.println(flag);
-System.out.println(!flag);
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+int min;
+if(a<b)
+{
+if(a<c)min=a;
+else min=c;
+}
+else
+{
+if(b<c)min=b;
+else min=c;
+}
+System.out.println("minimum no is"+min);
 }
 }

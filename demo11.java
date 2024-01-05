@@ -1,9 +1,17 @@
-class Test{
-public static void main(String args[]){
-int n1=6,n2=-2;
-System.out.println("First Number="+n1);
-System.out.println("Second Number="+n2);
-System.out.println(n1+"bitwise complement="+~n1);
-System.out.println(n2+"bitwise complement="+~n2);
+import java.util.Scanner;
+class pattern1{
+public static void printPattern(char c,int n){
+for(int i=0;i<n;i++){
+System.out.print("\n");
+for (int j=0;j<=i;j++)
+System.out.print(c);
 }
-} 
+}
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+char ch=sc.next().charAt(0);
+int row=sc.nextInt();
+printPattern(ch,row);
+}
+}
+
