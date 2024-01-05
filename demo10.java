@@ -1,11 +1,22 @@
-import java.util.Scanner;
-class Test{
+class Empolyee{
+int id;
+String name;
+String department;
+void insertRecord(int i,String n,String d){
+id=i;
+name=n;
+department=d;
+}
+void displayInformation(){
+System.out.println(id+""+name+""+department);}
+}
+class TestEmpolyee5{
 public static void main(String args[]){
-Scanner scob=new Scanner(System.in);
-int n=scob.nextInt();
-if(n%2==0)
-System.out.println("EVEN");
-else
-System.out.println("ODD");
+Empolyee s1=new Empolyee();
+Empolyee s2=new Empolyee();
+s1.insertRecord(111,"yammu","CSE");
+s2.insertRecord(222,"ganesh","MBA");
+s1.displayInformation();
+s2.displayInformation();
 }
 }

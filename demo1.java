@@ -1,32 +1,11 @@
-class C1{
-public void yamuna(){
-System.out.println("i am from cse");
-}
-public void bhavya(){
-System.out.println("i am from data science");
-}
-public void neha(){
-System.out.println("i am from aids");
-}
-public void pallavi(){
-System.out.println("i am from eee"); 
-}
-public void latha(){
-System.out.println("i am a ece");
-}
-public void navya(){
-System.out.println("i am from mechanical");
-}
-}
-class c2
-{
-public static void main(String[] args){
-C1 ob=new C1();
-ob.yamuna();
-ob.bhavya();
-ob.neha();
-ob.pallavi();
-ob.latha();
-ob.navya();
+import java.util.Scanner;
+class Test{
+public static void main(String args[]){
+Scanner scob=new Scanner(System.in);
+char c=scob.next().charAt(0);
+if((c=='A'||c=='E'||c=='I'||c=='O'||c=='u')||(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'))
+System.out.println("YES");
+else
+System.out.println("NO");
 }
 }

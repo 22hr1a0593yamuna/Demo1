@@ -1,11 +1,11 @@
-class Demo{
-public static int add(int a,int b){
-return a-b;
+class Student{
+int id;
+String name;
 }
+class TestStudent1{
 public static void main(String args[]){
-int n1=Integer.parseInt(args[0]);
-int n2=Integer.parseInt(args[1]);
-int res=Demo.add(n1,n2);
-System.out.println(res);
+Student s1=new Student();
+System.out.println(s1.id);
+System.out.println(s1.name);
 }
 }

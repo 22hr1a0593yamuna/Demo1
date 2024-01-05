@@ -1,17 +1,12 @@
-class B
-{
-public static void main(){
-System.out.println("main method without arugument called");
+class Student{
+int id;
+String name;
 }
-public static void main(int x){
-System.out.println("main method without arugument called"+x*2);
-}
-public static void main(String s){
-System.out.println("welcome"+s);}
+class TestStudent2{
 public static void main(String args[]){
-System.out.println("yamuna is typing");
-main();
-main("yamuna");
-main(20);
+Student s1=new Student();
+s1.id=101;
+s1.name="yamuna";
+System.out.println(s1.id+""+s1.name);
 }
 }

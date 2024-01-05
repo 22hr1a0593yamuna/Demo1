@@ -1,15 +1,20 @@
-import java.util.Scanner;
-class Test{
-public static void checkEvenOdd(int a){
-if(a%2==0)
-System.out.println("EVEN");
-else
-System.out.println("ODD");
+class Rectangle{
+int length;
+int width;
+void insert(int l,int w){
+length=l;
+width=w;
 }
+void calculateArea(){
+System.out.println(length*width);}
+}
+class TestRectangle1{
 public static void main(String args[]){
-Scanner scob=new Scanner(System.in);
-int n=scob.nextInt();
-Test.checkEvenOdd(n);
+Rectangle r1=new Rectangle();
+Rectangle r2=new Rectangle();
+r1.insert(11,5);
+r2.insert(3,15);
+r1.calculateArea();
+r2.calculateArea();
 }
 }
-         
