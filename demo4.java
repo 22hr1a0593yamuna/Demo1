@@ -1,15 +1,11 @@
-import java.util.Scanner;
-class InputSwap{
-public static void main(String args[])
+class Test{
+public static void main(String args[]){
+int i=1;
+int sum=0;
+for(i=0;i<=100;i=i+5)
 {
-Scanner scob=new Scanner(System.in);
-int num1,num2;
-num1=scob.nextInt();
-num2=scob.nextInt();
-int temp;
-temp=num1;
-num1=num2;
-num2=temp;
-System.out.println(num1+"\n"+num2);
+sum=sum+i;
+}
+System.out.print(sum);
 }
 }

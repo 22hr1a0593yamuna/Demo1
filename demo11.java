@@ -1,17 +1,21 @@
 import java.util.Scanner;
-class pattern1{
-public static void printPattern(char c,int n){
-for(int i=0;i<n;i++){
-System.out.print("\n");
-for (int j=0;j<=i;j++)
-System.out.print(c);
-}
-}
+class PalindromeString
+{
 public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-char ch=sc.next().charAt(0);
-int row=sc.nextInt();
-printPattern(ch,row);
+String n;
+String rs="";
+System.out.println("Enter a string:");
+n=sc.next();
+int len=n.length()-1;
+for(int i=len;i>=0;i--)
+{
+rs=rs+n.charAt(i);}
+if(n.equals(rs))
+{
+System.out.println("Palimdrome");}
+else
+{
+System.out.println("Not palindrome");}
 }
 }
-

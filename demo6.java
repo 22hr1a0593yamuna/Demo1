@@ -1,35 +1,12 @@
-import java.util.Scanner;
-class Counting
+class Test{
+public static void main(String args[]){
+int i=0;
+int sum=0;
+for(i=0;i<=100;i=i+5)
 {
-static boolean checkDigit(char c)
-{
-boolean b;
-if(c=='0'||c=='1'||c=='2'||c=='3'||c=='4'||c=='5'||c=='6'||c=='7'||c=='8'||c=='9')
-{
-b=true;
+System.out.print(i+"+");
+sum=sum+i;
 }
-else
-{
-b=false;
-}
-return b;
-}
-public static void main(String args[])
-{
-String str;
-int count=0;
-Scanner s=new Scanner(System.in);
-System.out.println("");
-System.out.println("Enter a String:");
-str=s.nextLine();
-System.out.println("");
-for(int i=0;i<str.length();i++)
-{
-if(checkDigit(str.charAt(i)))
-{
-count++;
-}
-}
-System.out.println("\nNumber of digits="+count);
+System.out.print("\b"+"="+sum);
 }
 }

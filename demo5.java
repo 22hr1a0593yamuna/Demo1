@@ -1,19 +1,13 @@
-import java.util.Scanner;
- class FrequencyChar{
-public static void main(String args[])
+class Test{
+public static void main(String args[]){
+int i=0;
+int sum=0;
+while(i<=100)
 {
-Scanner sc=new Scanner(System.in);
-String str=sc.nextLine();
-int count=0;
-for(int i=0;i<=str.length()-1;i++){
-if((str.charAt(i)=='0')||(str.charAt(i)=='1')||(str.charAt(i)=='2')||(str.charAt(i)=='3')||
-(str.charAt(i)=='4')||(str.charAt(i)=='5')||(str.charAt(i)=='6')||(str.charAt(i)=='7')||
-(str.charAt(i)=='8')||(str.charAt(i)=='9'))
-{
-count++;
+System.out.print(i+"+");
+sum=sum+i;
+i=i+5;
+}
+System.out.print("\b"+"="+sum);
 }
 }
-System.out.println(count);
-}?
-};
-

@@ -1,22 +1,14 @@
-import java.util.*;
-class findmin{
-public static void main(String args[])
-{
+import java.util.Scanner;
+class ReverseString{
+public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-int a=sc.nextInt();
-int b=sc.nextInt();
-int c=sc.nextInt();
-int min;
-if(a<b)
-{
-if(a<c)min=a;
-else min=c;
+String n;
+String rs="";
+n=sc.next();
+int len=n.length()-1;
+for(int i=len;i>=0;i--){
+rs=rs+n.charAt(i);
 }
-else
-{
-if(b<c)min=b;
-else min=c;
-}
-System.out.println("minimum no is"+min);
+System.out.println(rs);
 }
 }

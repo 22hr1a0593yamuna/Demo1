@@ -1,22 +1,14 @@
-import java.util.*;
-class findmax{
-public static void main(String args[])
-{
+import java.util.Scanner;
+class ReverseDigits{
+public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-int a=sc.nextInt();
-int b=sc.nextInt();
-int c=sc.nextInt();
-int max;
-if(a>b)
-{
-if(a>c)max=a;
-else max=c;
+int n;
+int rd=0;
+n=sc.nextInt();
+while(n>0){
+rd=rd*10+(n%10);
+n=n/10;
 }
-else
-{
-if(b>c)max=b;
-else max=c;
-}
-System.out.println("maximun no is"+max);
+System.out.println(rd);
 }
 }
