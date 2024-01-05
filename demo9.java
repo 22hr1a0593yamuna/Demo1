@@ -1,20 +1,25 @@
-class Student{
-int rollno;
-String name;
-void insertRecord(int r,String n){
-rollno=r;
-name=n;
+import java.util.Scanner;
+class Input2{
+public static double div(int a,int b)
+{
+double c=a/b;
+return c;
 }
-void displayInformation(){
-System.out.println(rollno+""+name);}
+public static int add(int a,int b)
+{
+int c=a+b;
+return c;
 }
-class TestStudent4{
-public static void main(String args[]){
-Student s1=new Student();
-Student s2=new Student();
-s1.insertRecord(111,"yammu");
-s2.insertRecord(222,"ganesh");
-s1.displayInformation();
-s2.displayInformation();
+public static void main(String args[])
+{
+Scanner scob=new Scanner(System.in);
+System.out.println("Enter a number:");
+int num1;
+num1=scob.nextInt();
+System.out.print("Enter a number:");
+int num2;
+num2=scob.nextInt();
+System.out.println(num1 +"+"+num2+"="+add(num1,num2));
+System.out.println(num1 +"/"+num2+"="+div(num1,num2));
 }
 }

@@ -1,11 +1,13 @@
-import java.util.Scanner;
-class Test{
-public static void main(String args[]){
-Scanner scob=new Scanner(System.in);
-char c=scob.next().charAt(0);
-if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')&&(c=='0'||c=='1'||c=='2'||c
-System.out.println("YES");
-else
-System.out.println("NO");
+class Employee{
+private int id;
+public void setID(int id){this.id=id;}
+public int getId(){return id;}
+}
+class BCA{
+public static void main(String args[])
+{
+Employee obj=new Employee();
+obj.setId(25935);
+System.out.println("id:"+ob.getId());
 }
 }

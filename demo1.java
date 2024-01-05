@@ -1,11 +1,13 @@
-import java.util.Scanner;
-class Test{
-public static void main(String args[]){
-Scanner scob=new Scanner(System.in);
-char c=scob.next().charAt(0);
-if((c=='A'||c=='E'||c=='I'||c=='O'||c=='u')||(c=='a'||c=='e'||c=='i'||c=='o'||c=='u'))
-System.out.println("YES");
-else
-System.out.println("NO");
+class BSC{
+public int x;
+public void setX(int a){x=a;}
+}
+class BCA{
+public static void main(String args[])
+{
+System.out.println("GOOD MORNING");
+BSC ob=new BSC();
+ob.setX(10);
+System.out.println("X:"+ob.x);
 }
 }

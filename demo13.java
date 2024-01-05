@@ -1,11 +1,11 @@
-import java.util.Scanner;
 class Test{
-public static void main(String args[]){
-Scanner scob=new Scanner(System.in);
-char c=scob.next().charAt(0);
-if((c>='A'&&c<='Z')||(c>='a'&&c<='z'))
-System.out.println("YES");
-else
-System.out.println("NO");
+public static void main(String args[])
+{
+double i=100.245;
+short j=(short)i;
+int k=(int)i;
+System.out.println("Original value before casting"+i);
+System.out.println("After type casting to short="+j);
+System.out.println("After type casting to int="+k);
 }
 }

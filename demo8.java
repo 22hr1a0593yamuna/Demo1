@@ -1,16 +1,18 @@
-class Student{
-int id;
-String name;
+import java.util.Scanner;
+class CountVowles{
+public static void main(String[] args){
+Scanner sc=new Scanner(System.in);
+String str=sc.nextLine();
+int count=0;
+for(int i=0;i<=str.length()-1;i++){
+if((str.charAt(i)=='8')||(str.charAt(i)=='9')||
+(str.charAt(i)=='0')||(str.charAt(i)=='1')||
+(str.charAt(i)=='2')||(str.charAt(i)=='3')||
+(str.charAt(i)=='4')||(str.charAt(i)=='5')||
+(str.charAt(i)=='6')||(str.charAt(i)=='7')){
+count++;
 }
-class TestStudent3{
-public static void main(String args[]){
-Student s1=new Student();
-Student s2=new Student();
-s1.id=100;
-s1.name="yammu";
-s2.id=200;
-s2.name="yamuna";
-System.out.println(s1.id+""+s1.name);
-System.out.println(s2.id+""+s2.name);
+}
+System.out.println(count);
 }
 }

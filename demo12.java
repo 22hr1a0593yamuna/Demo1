@@ -1,9 +1,11 @@
-import java.util.Scanner;
 class Test{
-public static void checkEvenOdd(int a){
-if(a/2)*2==a)
-System.out.println("EVEN");
-else
-System.out.println("ODD");
+public static void main(String args[])
+{
+int i=10;
+long l=i;
+double d=i;
+System.out.println("Integer:"+i);
+System.out.println("Long:"+i);
+System.out.println("Double:"+i);
 }
 }
