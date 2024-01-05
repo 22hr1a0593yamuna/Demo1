@@ -1,25 +1,17 @@
-import java.util.Scanner;
-class Input2{
-public static double div(int a,int b)
+ class UnaryOperatorsExample
 {
-double c=double(a)/double(b);
-return c;
-}
-public static int add(int a,int b)
-{
-int c=a+b;
-return c;
-}
-public static void main(String args[])
-{
-Scanner scob=new Scanner(System.in);
-System.out.println("Enter a number:");
-int num1;
-num1=scob.nextInt();
-System.out.print("Enter a number:");
-int num2;
-num2=scob.nextInt();
-System.out.println(num1 +"+"+num2+"="+add(num1,num2));
-System.out.println(num1 +"/"+num2+"="+div(num1,num2));
+public static void main(String args[]){
+int number=+76;
+System.out.println(number);
+number=-number;
+System.out.println(number);
+int a=20;
+a++;
+System.out.println(a);
+a--;
+System.out.println(a);
+boolean flag=false;
+System.out.println(flag);
+System.out.println(!flag);
 }
 }

@@ -1,13 +1,14 @@
-class BSC{
-public int x;
-public void setX(int a){x=a;}
-}
-class BCA{
-public static void main(String args[])
+import java.util.scanner;
+class Note1
 {
-System.out.println("GOOD MORNING");
-BSC ob=new BSC();
-ob.setX(10);
-System.out.println("X:"+ob.x);
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int number=sc.nextInt();
+while(number!=0);
+{
+int remainder=number%10;
+ int reverse=reverse*10+remainder;
+number=number/10;
+}
 }
 }

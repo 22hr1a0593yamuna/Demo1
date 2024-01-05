@@ -1,11 +1,16 @@
-class Test{
-public static void main(String args[])
-{
-int i=10;
-long l=i;
-double d=i;
-System.out.println("Integer:"+i);
-System.out.println("Long:"+i);
-System.out.println("Double:"+i);
+class Main{
+public static void main(String args[]){
+int number=2;
+int result=number<<1;
+System.out.println(result);
+int n=3;
+int r=n<<2;
+System.out.println(r);
+int x=20;
+int y=x>>1;
+System.out.println(y);
+int p=80;
+int q=p>>3;
+System.out.println(y);
 }
 }

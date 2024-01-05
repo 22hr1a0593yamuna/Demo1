@@ -1,18 +1,15 @@
 import java.util.Scanner;
-class CountVowles{
-public static void main(String[] args){
+class Test{
+public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-String str=sc.nextLine();
-int count=0;
-for(int i=0;i<=str.length()-1;i++){
-if((str.charAt(i)=='a')||(str.charAt(i)=='e')||
-(str.charAt(i)=='i')||(str.charAt(i)=='O')||
-(str.charAt(i)=='u')||(str.charAt(i)=='A')||
-(str.charAt(i)=='E')||(str.charAt(i)=='I')||
-(str.charAt(i)=='O')||(str.charAt(i)=='U')){
-count++;
-}
-}
-System.out.println(count);
+int a=sc.nextInt();
+int b=sc.nextInt();
+boolean cond=true;
+System.out.println("Conds is:"+cond);
+System.out.println("Var1="+a);
+System.out.println("Var2="+b);
+System.out.println("Now cond is:"+!cond);
+System.out.println("!(a<b)="+!(a<b));
+System.out.println("!(a>b)="+!(a>b));
 }
 }

@@ -1,13 +1,10 @@
-class Employee{
-private int id;
-public void setID(int id){this.id=id;}
-public int getId(){return id;}
-}
-class BCA{
-public static void main(String args[])
-{
-Employee obj=new Employee();
-obj.setId(25935);
-System.out.println("id:"+ob.getId());
+import java.util.Scanner;
+class Difference{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+int b=sc.nextInt();
+int dif= Math.abs(a-b);
+System.out.println(dif);
 }
 }

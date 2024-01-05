@@ -1,11 +1,11 @@
-class Test{
-public static void main(String args[])
+class Assingment{
+public static void main(String[]args)
 {
-double i=100.245;
-short j=(short)i;
-int k=(int)i;
-System.out.println("Original value before casting"+i);
-System.out.println("After type casting to short="+j);
-System.out.println("After type casting to int="+k);
+int num;
+String name;
+num=10;
+name="B.TECH";
+System.out.println("num is aasigned:"+num);
+System.out.println("name is assigned:"+name);
 }
 }
