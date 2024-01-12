@@ -1,5 +1,8 @@
-class day1prog01{
+class StrBuilder{
 public static void main(String args[]){
-System.out.println("hello world");
+StringBuilder s1=new StringBuilder("Hello");
+StringBuilder s2=new StringBuilder("World");
+StringBuilder s=s1.append(s2);
+System.out.println(s.toString());
 }
 }
